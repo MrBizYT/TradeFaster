@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "tradefaster",
+  "version": "1.0.0",
+  "name": "TradeFaster",
+  "icon": "assets/tradefaster/icon.png",
+  "description": "TradeFaster добавляет кнопку в окно торговли, которая за одно нажатие обменивает весь дневной лимит жителя. Попрощайтесь с бесконечными кликами!",
+  "authors": [
+    "TradeFaster"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/TradeFaster/TradeFaster"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.tradefaster.client.TradeFasterClient"
+    ]
+  },
+  "mixins": [
+    "tradefaster.mixins.json",
+    {
+      "config": "tradefaster.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
