@@ -1,1 +1,18 @@
-
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tradefaster.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "MerchantScreenMixin",
+    "MerchantScreenAccessor",
+    "AbstractContainerScreenAccessor",
+    "ScreenAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
